@@ -1,6 +1,36 @@
-.carousel-message {
-  margin-top: 20px;
-  text-align: center;
-  font-size: 24px;
-  color:white ;
+.carousel-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 24px;
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
+.carousel-items {
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.carousel-message h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #2d3748;
+}
+.carousel-action button {
+  padding: 8px 16px;
+  margin-right: 8px;
+  background-color: #fefbfb; 
+  color: #29272b; 
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.2s; 
+}
+
+.carousel-action button:hover {
+  background-color: #333333; 
+  transform: scale(1.05); 
+}
+

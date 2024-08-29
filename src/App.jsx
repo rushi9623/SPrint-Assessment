@@ -1,12 +1,13 @@
 
-//import Product from './Product'
-import Carousel from './Carousel'
-import './index.css'
+import React from 'react';
+import Carousel from './Carousel'; 
 
-export default function App() {
+function App() {
   return (
-    <div>
-      <Carousel/>
+    <div className="App">
+      <Carousel />
     </div>
-  )
+  );
 }
+
+export default App;

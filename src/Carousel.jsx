@@ -1,35 +1,33 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
+import './index.css'; // Make sure to import the CSS file
 
+const Carousel = () => {
+  const [message, setMessage] = useState('');
 
-    Const Carousel  = () => {
-        const [message, setmessage] = useState('');
-        
-    const handelCommit = ()=> {
-        setmessage('2e813de')
-    };
-    const handelAnalytics = () =>{
-        setmessage('32 online now ')
-    };
-    const handelUpgrade = () =>{
-        setmessage('2 days left in your trail')
-    }
-    
+  const handleCommit = () => {
+    setMessage('2e813de');
+  };
+
+  const handleAnalytics = () => {
+    setMessage('32 online now');
+  };
+
+  const handleUpgrade = () => {
+    setMessage('2 days left in your trial');
+  };
+
   return (
     <div className='carousel-container'>
       <div className='carousel-items'>
-
+        <h2>{message}</h2>
       </div>
-      
-      <div className='Carosel-action'>
-          <button onClick={handelCommit} >Commit</button>
-          <button onClick={handelAnalytics} >Analytics</button>
-          <button onClick={handelUpgrade} >Upgrade</button>
-      </div>
-      <div className='carousel-message'>
-          <h2>{message}</h2>
+      <div className='carousel-action'>
+        <button onClick={handleCommit}>Commit</button>
+        <button onClick={handleAnalytics}>Analytics</button>
+        <button onClick={handleUpgrade}>Upgrade</button>
       </div>
     </div>
-  )
+  );
+};
 
-    }
 export default Carousel;
